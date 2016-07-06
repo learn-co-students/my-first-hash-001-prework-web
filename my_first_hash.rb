@@ -1,3 +1,4 @@
+require 'pry'
 def my_hash
   my_hash = {"name" => "pera"}
 end
@@ -11,8 +12,11 @@ def retrieval
 end
 
 def adding
-  shipping_manifest["pearl necklace"] = 1
-  return shipping_manifest
+   hash = shipping_manifest
+  #binding.pry
+  hash["pearl necklace"] = 1
+  hash
+  #binding.pry
 end
 
 
